@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		2FBDE2F51C49BD70001CE8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE2F41C49BD70001CE8F9 /* AppDelegate.swift */; };
 		2FBDE2F71C49BD70001CE8F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE2F61C49BD70001CE8F9 /* ViewController.swift */; };
-		2FBDE2FA1C49BD70001CE8F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDE2F81C49BD70001CE8F9 /* Main.storyboard */; };
+		2FBDE2FA1C49BD70001CE8F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDE2F81C49BD70001CE8F9 /* Main.storyboard */; settings = {ASSET_TAGS = (00, ); }; };
 		2FBDE2FC1C49BD70001CE8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDE2FB1C49BD70001CE8F9 /* Assets.xcassets */; };
 		2FBDE2FF1C49BD70001CE8F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDE2FD1C49BD70001CE8F9 /* LaunchScreen.storyboard */; };
 		2FBDE30A1C49BD70001CE8F9 /* A2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE3091C49BD70001CE8F9 /* A2Tests.swift */; };
 		2FBDE3151C49BD70001CE8F9 /* A2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE3141C49BD70001CE8F9 /* A2UITests.swift */; };
+		2FBDE3231C4A04D1001CE8F9 /* SudokuMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBDE3221C4A04D1001CE8F9 /* SudokuMainController.swift */; };
+		2FBDE3651C569D47001CE8F9 /* question.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDE3641C569D47001CE8F9 /* question.txt */; };
+		2FBDE36A1C569E66001CE8F9 /* question.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2FBDE3691C569E66001CE8F9 /* question.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2FBDE3101C49BD70001CE8F9 /* A2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBDE3141C49BD70001CE8F9 /* A2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A2UITests.swift; sourceTree = "<group>"; };
 		2FBDE3161C49BD70001CE8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FBDE3221C4A04D1001CE8F9 /* SudokuMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SudokuMainController.swift; sourceTree = "<group>"; };
+		2FBDE3641C569D47001CE8F9 /* question.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.txt; sourceTree = "<group>"; };
+		2FBDE3691C569E66001CE8F9 /* question.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		2FBDE2E81C49BD70001CE8F9 = {
 			isa = PBXGroup;
 			children = (
+				2FBDE3681C569E34001CE8F9 /* Resource */,
 				2FBDE2F31C49BD70001CE8F9 /* A2 */,
 				2FBDE3081C49BD70001CE8F9 /* A2Tests */,
 				2FBDE3131C49BD70001CE8F9 /* A2UITests */,
@@ -103,6 +110,8 @@
 				2FBDE2FB1C49BD70001CE8F9 /* Assets.xcassets */,
 				2FBDE2FD1C49BD70001CE8F9 /* LaunchScreen.storyboard */,
 				2FBDE3001C49BD70001CE8F9 /* Info.plist */,
+				2FBDE3221C4A04D1001CE8F9 /* SudokuMainController.swift */,
+				2FBDE3641C569D47001CE8F9 /* question.txt */,
 			);
 			path = A2;
 			sourceTree = "<group>";
@@ -123,6 +132,14 @@
 				2FBDE3161C49BD70001CE8F9 /* Info.plist */,
 			);
 			path = A2UITests;
+			sourceTree = "<group>";
+		};
+		2FBDE3681C569E34001CE8F9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2FBDE3691C569E66001CE8F9 /* question.txt */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,12 +204,17 @@
 		2FBDE2E91C49BD70001CE8F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					00,
+					01,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = YangYang;
 				TargetAttributes = {
 					2FBDE2F01C49BD70001CE8F9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4LS96X6T96;
 					};
 					2FBDE3041C49BD70001CE8F9 = {
 						CreatedOnToolsVersion = 7.2;
@@ -231,6 +253,8 @@
 			files = (
 				2FBDE2FF1C49BD70001CE8F9 /* LaunchScreen.storyboard in Resources */,
 				2FBDE2FC1C49BD70001CE8F9 /* Assets.xcassets in Resources */,
+				2FBDE3651C569D47001CE8F9 /* question.txt in Resources */,
+				2FBDE36A1C569E66001CE8F9 /* question.txt in Resources */,
 				2FBDE2FA1C49BD70001CE8F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBDE3231C4A04D1001CE8F9 /* SudokuMainController.swift in Sources */,
 				2FBDE2F71C49BD70001CE8F9 /* ViewController.swift in Sources */,
 				2FBDE2F51C49BD70001CE8F9 /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = A2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dal.CSCI4176.yangy.A2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,10 +439,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = A2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dal.CSCI4176.yangy.A2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,6 +517,7 @@
 				2FBDE31B1C49BD70001CE8F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FBDE31C1C49BD70001CE8F9 /* Build configuration list for PBXNativeTarget "A2Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +526,7 @@
 				2FBDE31E1C49BD70001CE8F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FBDE31F1C49BD70001CE8F9 /* Build configuration list for PBXNativeTarget "A2UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +535,7 @@
 				2FBDE3211C49BD70001CE8F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
